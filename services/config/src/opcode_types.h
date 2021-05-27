@@ -87,8 +87,10 @@ enum OpCode {
   kSetPowerModeTiled = 51,
   kSetPanelBrightnessTiled = 52,
   kSetWiderModePref = 53,
+  #ifndef TARGET_HAS_PREBUILT_HWC2
   kSetCameraSmoothInfo = 54,
   kControlCameraSmoothCallback = 55,
+  #endif // TARGET_HAS_PREBUILT_HWC2
 
   kDestroy = 0xFFFF, // Destroy sequence execution
 };
